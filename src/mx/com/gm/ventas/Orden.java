@@ -14,7 +14,7 @@ public class Orden {
 
     public void agregarProducto(Producto producto){
         if(this.contadorProductos < Orden.MAX_PRODUCTOS){
-            productos[contadorProductos++] = producto;
+            this.productos[this.contadorProductos++] = producto;
         } else {
             System.out.println("Se ha superado el máximo de productos" + Orden.MAX_PRODUCTOS);
         }
